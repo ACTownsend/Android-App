@@ -24020,11 +24020,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Adam\\source\\repos\\6002CEM_AdamTownsend\\6002\\6002.csproj",
+      "projectUniqueName": "H:\\My Drive\\uni\\year 3 omg\\assignments\\mobile app\\6002CEM_AdamTownsend\\6002\\6002.csproj",
       "projectName": "6002",
-      "projectPath": "C:\\Users\\Adam\\source\\repos\\6002CEM_AdamTownsend\\6002\\6002.csproj",
+      "projectPath": "H:\\My Drive\\uni\\year 3 omg\\assignments\\mobile app\\6002CEM_AdamTownsend\\6002\\6002.csproj",
       "packagesPath": "C:\\Users\\Adam\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Adam\\source\\repos\\6002CEM_AdamTownsend\\6002\\obj\\",
+      "outputPath": "H:\\My Drive\\uni\\year 3 omg\\assignments\\mobile app\\6002CEM_AdamTownsend\\6002\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

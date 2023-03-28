@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using _6002.ViewModel;
+using Microsoft.Extensions.Logging;
 
 namespace _6002;
 
@@ -18,7 +19,9 @@ public static class MauiProgram
 #if DEBUG
 		builder.Logging.AddDebug();
 #endif
+		builder.Services.AddTransient<GameViewModel>();
+        builder.Services.AddTransient<MainPage>();
 
-		return builder.Build();
+        return builder.Build();
 	}
 }

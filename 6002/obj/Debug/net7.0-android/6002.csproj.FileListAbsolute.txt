@@ -2083,3 +2083,5 @@ C:\Users\Adam\source\repos\6002CEM assignment 2\6002\obj\Debug\net7.0-android\st
 C:\Users\Adam\source\repos\6002CEM assignment 2\6002\obj\Debug\net7.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Users\Adam\source\repos\6002CEM assignment 2\6002\obj\Debug\net7.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Adam\source\repos\6002CEM assignment 2\6002\obj\Debug\net7.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\Adam\source\repos\6002CEM assignment 2\6002\obj\Debug\net7.0-android\android\assets\CommunityToolkit.Mvvm.dll
+C:\Users\Adam\source\repos\6002CEM assignment 2\6002\obj\Debug\net7.0-android\android\assets\CommunityToolkit.Mvvm.pdb

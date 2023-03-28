@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "H:\\My Drive\\uni\\year 3 omg\\assignments\\mobile app\\6002CEM_AdamTownsend\\6002\\6002.csproj": {}
+    "C:\\Users\\Adam\\source\\repos\\6002CEM assignment 2\\6002\\6002.csproj": {}
   },
   "projects": {
-    "H:\\My Drive\\uni\\year 3 omg\\assignments\\mobile app\\6002CEM_AdamTownsend\\6002\\6002.csproj": {
+    "C:\\Users\\Adam\\source\\repos\\6002CEM assignment 2\\6002\\6002.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\My Drive\\uni\\year 3 omg\\assignments\\mobile app\\6002CEM_AdamTownsend\\6002\\6002.csproj",
+        "projectUniqueName": "C:\\Users\\Adam\\source\\repos\\6002CEM assignment 2\\6002\\6002.csproj",
         "projectName": "6002",
-        "projectPath": "H:\\My Drive\\uni\\year 3 omg\\assignments\\mobile app\\6002CEM_AdamTownsend\\6002\\6002.csproj",
+        "projectPath": "C:\\Users\\Adam\\source\\repos\\6002CEM assignment 2\\6002\\6002.csproj",
         "packagesPath": "C:\\Users\\Adam\\.nuget\\packages\\",
-        "outputPath": "H:\\My Drive\\uni\\year 3 omg\\assignments\\mobile app\\6002CEM_AdamTownsend\\6002\\obj\\",
+        "outputPath": "C:\\Users\\Adam\\source\\repos\\6002CEM assignment 2\\6002\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [

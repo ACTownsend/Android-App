@@ -12,33 +12,33 @@ build_property.EnableSingleFileAnalyzer = true
 build_property.EnableTrimAnalyzer = false
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = _6002
-build_property.ProjectDir = H:\My Drive\uni\year 3 omg\assignments\mobile app\6002CEM_AdamTownsend\6002\
+build_property.ProjectDir = C:\Users\Adam\source\repos\6002CEM assignment 2\6002\
 
-[H:/My Drive/uni/year 3 omg/assignments/mobile app/6002CEM_AdamTownsend/6002/App.xaml]
+[C:/Users/Adam/source/repos/6002CEM assignment 2/6002/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = _6002.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[H:/My Drive/uni/year 3 omg/assignments/mobile app/6002CEM_AdamTownsend/6002/AppShell.xaml]
+[C:/Users/Adam/source/repos/6002CEM assignment 2/6002/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = _6002.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[H:/My Drive/uni/year 3 omg/assignments/mobile app/6002CEM_AdamTownsend/6002/MainPage.xaml]
+[C:/Users/Adam/source/repos/6002CEM assignment 2/6002/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = _6002.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[H:/My Drive/uni/year 3 omg/assignments/mobile app/6002CEM_AdamTownsend/6002/Resources/Styles/Colors.xaml]
+[C:/Users/Adam/source/repos/6002CEM assignment 2/6002/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = _6002.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[H:/My Drive/uni/year 3 omg/assignments/mobile app/6002CEM_AdamTownsend/6002/Resources/Styles/Styles.xaml]
+[C:/Users/Adam/source/repos/6002CEM assignment 2/6002/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = _6002.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml

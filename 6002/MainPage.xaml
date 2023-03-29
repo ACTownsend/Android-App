@@ -7,32 +7,75 @@
              xmlns:model="clr-namespace:_6002.Model"
              x:DataType="viewmodel:GameViewModel">
     
-    <Grid RowDefinitions="*, Auto">
+    <Grid RowDefinitions="*, Auto"
+          >
 
         <VerticalStackLayout
             BindableLayout.ItemsSource="{Binding Rows}">
             <BindableLayout.ItemTemplate>
                 <DataTemplate x:DataType="model:WordRow">
                     <HorizontalStackLayout
+                        HorizontalOptions="Center"
                         BindableLayout.ItemsSource="{Binding Letters}">
                         <BindableLayout.ItemTemplate>
                             <DataTemplate x:DataType="model:Letter">
-                                <Frame BorderColor="LightGray">
-                                    <Button Style="{DynamicResource letterButton}" Text="{Binding Input}" BackgroundColor="{Binding Color}">
-                                        
-                                    </Button>
+                                <Frame
+                                    Style="{DynamicResource letterFrame}"
+                                    BackgroundColor="{Binding Color}">
+                                    <Label Text="{Binding Input}"
+                                           TextColor="White"
+                                           FontSize="24"
+                                           HorizontalOptions="Center"
+                                           VerticalOptions="Center">
+                                    </Label>
                                 </Frame>
                             </DataTemplate>
                         </BindableLayout.ItemTemplate>
                     </HorizontalStackLayout>
                 </DataTemplate>
-                
             </BindableLayout.ItemTemplate>
-            
-            
         </VerticalStackLayout>
-        
-        
+
+        <VerticalStackLayout Grid.Row="1">
+            <HorizontalStackLayout
+                        HorizontalOptions="Center"
+                        BindableLayout.ItemsSource="{Binding Keyboard1}">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate x:DataType="{x:Null}">
+                        <Button Style="{DynamicResource letterButton}"
+                            Text="{Binding .}"
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:GameViewModel}}, Path=EnterLetterCommand}"
+                                CommandParameter="{Binding .}"/>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+                        HorizontalOptions="Center"
+                        BindableLayout.ItemsSource="{Binding Keyboard2}">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate x:DataType="{x:Null}">
+                        <Button Style="{DynamicResource letterButton}"
+                            Text="{Binding .}"
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:GameViewModel}}, Path=EnterLetterCommand}"
+                                CommandParameter="{Binding .}"/>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+                        HorizontalOptions="Center"
+                        BindableLayout.ItemsSource="{Binding Keyboard3}">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate x:DataType="{x:Null}">
+                        <Button Style="{DynamicResource letterButton}"
+                            Text="{Binding .}"
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:GameViewModel}}, Path=EnterLetterCommand}"
+                                CommandParameter="{Binding .}"/>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+
+
     </Grid>
 
 </ContentPage>

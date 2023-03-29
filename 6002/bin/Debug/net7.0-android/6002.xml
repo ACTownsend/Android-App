@@ -16,16 +16,9 @@
         <member name="T:_6002.ViewModel.GameViewModel">
             <inheritdoc/>
             <inheritdoc/>
-            <inheritdoc/>
         </member>
         <member name="P:_6002.ViewModel.GameViewModel.Rows">
             <inheritdoc cref="F:_6002.ViewModel.GameViewModel.rows"/>
-        </member>
-        <member name="F:_6002.ViewModel.GameViewModel.enterCommand">
-            <summary>The backing field for <see cref="P:_6002.ViewModel.GameViewModel.EnterCommand"/>.</summary>
-        </member>
-        <member name="P:_6002.ViewModel.GameViewModel.EnterCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:_6002.ViewModel.GameViewModel.Enter"/>.</summary>
         </member>
         <member name="F:_6002.ViewModel.GameViewModel.enterLetterCommand">
             <summary>The backing field for <see cref="P:_6002.ViewModel.GameViewModel.EnterLetterCommand"/>.</summary>

@@ -36,6 +36,10 @@ public class WordRow
             {
                 letter.Color = Colors.Yellow;
             }
+            else
+            {
+                letter.Color = Colors.Gray;
+            }
         }
         return count == 5;
     }

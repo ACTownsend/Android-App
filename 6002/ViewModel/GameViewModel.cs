@@ -37,7 +37,13 @@ public partial class GameViewModel : ObservableObject
         Keyboard2 = "ASDFGHJKL".ToCharArray();
         Keyboard3 = "<ZXCVBNM^".ToCharArray();
     }
-    public void Enter()
+
+    [RelayCommand]
+    async void Back()
+    {
+        await Shell.Current.GoToAsync("..");
+    }
+    async public void Enter()
     {
 
         if(columnIndex != 5)
@@ -47,13 +53,14 @@ public partial class GameViewModel : ObservableObject
         var correct = rows[rowIndex].Validate(correctAnswer);
         if(correct)
         {
-            App.Current.MainPage.DisplayAlert("Correct!","You win","Well Done");
-            return;
 
+            await App.Current.MainPage.DisplayAlert("Correct!", "You win", "Well Done");
+            Back();
         }
         if (rowIndex == 5)
         {
-            App.Current.MainPage.DisplayAlert("Uh-Oh!", "You Lose", "Better Luck Next Time");
+            await App.Current.MainPage.DisplayAlert("Uh-Oh!", "You Lose", "Better Luck Next Time");
+            Back();
         }
         else
         {

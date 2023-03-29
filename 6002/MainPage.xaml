@@ -21,23 +21,61 @@
                             <DataTemplate x:DataType="model:Letter">
                                 <Frame
                                     Style="{DynamicResource letterFrame}"
-                                    BackgroundColor="{Binding Color}"
-                                    Margin="10">
+                                    BackgroundColor="{Binding Color}">
                                     <Label Text="{Binding Input}"
-                                           FontSize="Large">
+                                           TextColor="White"
+                                           FontSize="24"
+                                           HorizontalOptions="Center"
+                                           VerticalOptions="Center">
                                     </Label>
                                 </Frame>
                             </DataTemplate>
                         </BindableLayout.ItemTemplate>
                     </HorizontalStackLayout>
                 </DataTemplate>
-                
             </BindableLayout.ItemTemplate>
-            
-            
         </VerticalStackLayout>
-        
-        
+
+        <VerticalStackLayout Grid.Row="1">
+            <HorizontalStackLayout
+                        HorizontalOptions="Center"
+                        BindableLayout.ItemsSource="{Binding Keyboard1}">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate x:DataType="{x:Null}">
+                        <Button Style="{DynamicResource letterButton}"
+                            Text="{Binding .}"
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:GameViewModel}}, Path=EnterLetterCommand}"
+                                CommandParameter="{Binding .}"/>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+                        HorizontalOptions="Center"
+                        BindableLayout.ItemsSource="{Binding Keyboard2}">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate x:DataType="{x:Null}">
+                        <Button Style="{DynamicResource letterButton}"
+                            Text="{Binding .}"
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:GameViewModel}}, Path=EnterLetterCommand}"
+                                CommandParameter="{Binding .}"/>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+                        HorizontalOptions="Center"
+                        BindableLayout.ItemsSource="{Binding Keyboard3}">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate x:DataType="{x:Null}">
+                        <Button Style="{DynamicResource letterButton}"
+                            Text="{Binding .}"
+                                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:GameViewModel}}, Path=EnterLetterCommand}"
+                                CommandParameter="{Binding .}"/>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+
+
     </Grid>
 
 </ContentPage>

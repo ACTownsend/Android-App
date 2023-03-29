@@ -10,7 +10,8 @@ public partial class MainPage : ContentPage
 	{
 		InitializeComponent();
 		BindingContext = viewModel;
-	}
+        var frame = new Frame();
+    }
 
 
 }

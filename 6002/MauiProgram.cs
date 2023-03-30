@@ -21,7 +21,7 @@ public static class MauiProgram
 #endif
 		builder.Services.AddTransient<GameViewModel>();
         builder.Services.AddTransient<MainPage>();
-
+        builder.Services.AddTransient<Game>();
         return builder.Build();
 	}
 }

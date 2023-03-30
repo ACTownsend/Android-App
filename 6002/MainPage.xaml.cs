@@ -1,18 +1,14 @@
-﻿using _6002.ViewModel;
-
-namespace _6002;
+﻿namespace _6002;
 
 public partial class MainPage : ContentPage
 {
 
-
-	public MainPage(GameViewModel viewModel)
-	{
-		InitializeComponent();
-		BindingContext = viewModel;
-        var frame = new Frame();
+    public MainPage()
+    {
+        InitializeComponent();
     }
-
-
+    private async void Button_Clicked_1(object sender, EventArgs e)
+    {
+       await Shell.Current.GoToAsync("Game");
+    }
 }
-

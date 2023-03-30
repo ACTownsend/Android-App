@@ -149,6 +149,10 @@
               "target": "Package",
               "version": "[1.7.0.1, )",
               "autoReferenced": true
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.9.141-beta, )"
             }
           },
           "imports": [
@@ -216,6 +220,10 @@
               "target": "Package",
               "version": "[7.0.59, )",
               "autoReferenced": true
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.9.141-beta, )"
             }
           },
           "imports": [
@@ -283,6 +291,10 @@
               "target": "Package",
               "version": "[7.0.59, )",
               "autoReferenced": true
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.9.141-beta, )"
             }
           },
           "imports": [
@@ -367,6 +379,10 @@
               "target": "Package",
               "version": "[1.2.221209.1, )",
               "autoReferenced": true
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.9.141-beta, )"
             }
           },
           "imports": [

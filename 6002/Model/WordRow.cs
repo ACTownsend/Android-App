@@ -34,7 +34,8 @@ public class WordRow
             }
             else if(correctAnswer.Contains(letter.Input))
             {
-                letter.Color = Colors.Yellow;
+                letter.Color = Colors.Orange;
+                
             }
             else
             {

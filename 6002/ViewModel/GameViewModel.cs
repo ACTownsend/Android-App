@@ -7,12 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+
 namespace _6002.ViewModel;
 
 public partial class GameViewModel : ObservableObject
 {
      int rowIndex;
      int columnIndex;
+
 
     char[] correctAnswer;
     public char[] Keyboard1 { get; }
@@ -35,7 +38,7 @@ public partial class GameViewModel : ObservableObject
         correctAnswer = "TESTS".ToCharArray();
         Keyboard1 = "QWERTYUIOP".ToCharArray();
         Keyboard2 = "ASDFGHJKL".ToCharArray();
-        Keyboard3 = "<ZXCVBNM^".ToCharArray();
+        Keyboard3 = ">ZXCVBNM<".ToCharArray();
     }
 
     [RelayCommand]
@@ -54,12 +57,12 @@ public partial class GameViewModel : ObservableObject
         if(correct)
         {
 
-            await App.Current.MainPage.DisplayAlert("Correct!", "You win", "Well Done");
+            await App.Current.MainPage.DisplayAlert("Correct!", "You win", "Back To Main Menu");
             Back();
         }
         if (rowIndex == 5)
         {
-            await App.Current.MainPage.DisplayAlert("Uh-Oh!", "You Lose", "Better Luck Next Time");
+            await App.Current.MainPage.DisplayAlert("Uh-Oh!", "You Lose", "Back To Main Menu");
             Back();
         }
         else
@@ -71,7 +74,7 @@ public partial class GameViewModel : ObservableObject
     [RelayCommand]
     public void EnterLetter(char letter)
     {
-        if (letter == '^')
+        if (letter == '>')
         {
             Enter();
             return;

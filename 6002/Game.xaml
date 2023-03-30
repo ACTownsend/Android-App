@@ -51,7 +51,7 @@
             </HorizontalStackLayout>
             <HorizontalStackLayout
                         HorizontalOptions="Center"
-                        BindableLayout.ItemsSource="{Binding Keyboard2}">
+                        BindableLayout.ItemsSource="{Binding Keyboard2 }">
                 <BindableLayout.ItemTemplate>
                     <DataTemplate x:DataType="{x:Null}">
                         <Button Style="{DynamicResource letterButton}"

@@ -1,21 +1,21 @@
 ﻿using _6002.Model;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-
-
+using System.IO;
+using Microsoft.Maui.Controls;
 namespace _6002.ViewModel;
 
-public partial class GameViewModel : ObservableObject
+public partial class GameViewModel : CommunityToolkit.Mvvm.ComponentModel.ObservableObject
 {
-     int rowIndex;
-     int columnIndex;
+    int rowIndex;
+    int columnIndex;
 
+    private string _currentWord;
+    public string CurrentWord
+    {
+        get { return _currentWord; }
+        set { SetProperty(ref _currentWord, value); }
+    }
 
     char[] correctAnswer;
     public char[] Keyboard1 { get; }
@@ -35,10 +35,41 @@ public partial class GameViewModel : ObservableObject
             new WordRow(),
             new WordRow()
         };
-        correctAnswer = "TESTS".ToCharArray();
+
         Keyboard1 = "QWERTYUIOP".ToCharArray();
         Keyboard2 = "ASDFGHJKL".ToCharArray();
         Keyboard3 = ">ZXCVBNM<".ToCharArray();
+        // Load the words from the text file
+        string rawdata = File.ReadAllText("../Resouces/Raw/words.txt");
+        Word = LoadWords(rawdata);
+
+        // Initialize the random number generator
+        _random = new Random();
+        string word = Word[_random.Next(Word.Count)];
+        correctAnswer = word.ToCharArray();
+    }
+    private List<string> _words;
+    private Random _random;
+
+    public List<string> Word
+    {
+        get { return _words; }
+        set { SetProperty(ref _words, value); }
+    }
+
+
+    private List<string> LoadWords(string filename)
+    {
+        // Read all the lines from the text file
+        string[] lines = File.ReadAllLines(filename);
+
+        // Filter out any empty lines or lines that start with a comment character (#)
+        IEnumerable<string> filteredLines = lines.Where(line => !string.IsNullOrWhiteSpace(line) && !line.StartsWith("#"));
+
+        // Convert the filtered lines to a list of strings
+        List<string> words = filteredLines.ToList();
+
+        return words;
     }
 
     [RelayCommand]
@@ -49,12 +80,12 @@ public partial class GameViewModel : ObservableObject
     async public void Enter()
     {
 
-        if(columnIndex != 5)
+        if (columnIndex != 5)
         {
             return;
         }
         var correct = rows[rowIndex].Validate(correctAnswer);
-        if(correct)
+        if (correct)
         {
 
             await App.Current.MainPage.DisplayAlert("Correct!", "You win", "Back To Main Menu");
@@ -80,8 +111,8 @@ public partial class GameViewModel : ObservableObject
             return;
         }
         if (letter == '<')
-        {   
-            if(columnIndex == 0)
+        {
+            if (columnIndex == 0)
             {
                 return;
             }

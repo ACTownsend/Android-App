@@ -537,3 +537,9 @@ C:\Users\Adam\source\repos\6002CEM assignment 2\6002\obj\Debug\net7.0-ios\iossim
 C:\Users\Adam\source\repos\6002CEM assignment 2\6002\obj\Debug\net7.0-ios\iossimulator-x64\6002.csproj.CopyComplete
 C:\Users\Adam\source\repos\6002CEM assignment 2\6002\obj\Debug\net7.0-ios\iossimulator-x64\6002.genruntimeconfig.cache
 C:\Users\Adam\source\repos\6002CEM assignment 2\6002\obj\Debug\net7.0-ios\iossimulator-x64\ref\6002.dll
+C:\Users\Adam\source\repos\6002CEM assignment 2\6002\bin\Debug\net7.0-ios\iossimulator-x64\MvvmHelpers.dll
+C:\Users\Adam\source\repos\6002CEM assignment 2\6002\bin\Debug\net7.0-ios\iossimulator-x64\SQLite-net.dll
+C:\Users\Adam\source\repos\6002CEM assignment 2\6002\bin\Debug\net7.0-ios\iossimulator-x64\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Adam\source\repos\6002CEM assignment 2\6002\bin\Debug\net7.0-ios\iossimulator-x64\SQLitePCLRaw.core.dll
+C:\Users\Adam\source\repos\6002CEM assignment 2\6002\bin\Debug\net7.0-ios\iossimulator-x64\SQLitePCLRaw.provider.sqlite3.dll
+C:\Users\Adam\source\repos\6002CEM assignment 2\6002\obj\Debug\net7.0-ios\iossimulator-x64\build-signature\signature

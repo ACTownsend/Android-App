@@ -1,5 +1,4 @@
 using _6002.ViewModel;
-
 namespace _6002;
 
 public partial class Game : ContentPage

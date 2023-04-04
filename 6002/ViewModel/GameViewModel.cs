@@ -5,7 +5,7 @@ using System.IO;
 using Microsoft.Maui.Controls;
 namespace _6002.ViewModel;
 
-public partial class GameViewModel : CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+public partial class GameViewModel : ObservableObject
 {
     int rowIndex;
     int columnIndex;
@@ -35,41 +35,17 @@ public partial class GameViewModel : CommunityToolkit.Mvvm.ComponentModel.Observ
             new WordRow(),
             new WordRow()
         };
-
+       
         Keyboard1 = "QWERTYUIOP".ToCharArray();
         Keyboard2 = "ASDFGHJKL".ToCharArray();
         Keyboard3 = ">ZXCVBNM<".ToCharArray();
         // Load the words from the text file
-        string rawdata = File.ReadAllText("../Resouces/Raw/words.txt");
-        Word = LoadWords(rawdata);
 
-        // Initialize the random number generator
-        _random = new Random();
-        string word = Word[_random.Next(Word.Count)];
+        var repo = new Repo();
+        String word = repo.RandomWord();
         correctAnswer = word.ToCharArray();
-    }
-    private List<string> _words;
-    private Random _random;
+        App.Current.MainPage.DisplayAlert("1",word,"2");
 
-    public List<string> Word
-    {
-        get { return _words; }
-        set { SetProperty(ref _words, value); }
-    }
-
-
-    private List<string> LoadWords(string filename)
-    {
-        // Read all the lines from the text file
-        string[] lines = File.ReadAllLines(filename);
-
-        // Filter out any empty lines or lines that start with a comment character (#)
-        IEnumerable<string> filteredLines = lines.Where(line => !string.IsNullOrWhiteSpace(line) && !line.StartsWith("#"));
-
-        // Convert the filtered lines to a list of strings
-        List<string> words = filteredLines.ToList();
-
-        return words;
     }
 
     [RelayCommand]
@@ -84,7 +60,11 @@ public partial class GameViewModel : CommunityToolkit.Mvvm.ComponentModel.Observ
         {
             return;
         }
+        var repo = new Repo();
         var correct = rows[rowIndex].Validate(correctAnswer);
+       // bool isAWord = repo.isWord(word);
+        //App.Current.MainPage.DisplayAlert("1", word, "2");
+
         if (correct)
         {
 

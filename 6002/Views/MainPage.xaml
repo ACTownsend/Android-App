@@ -25,6 +25,8 @@
             <Button
                 Text="Begin"
                 SemanticProperties.Hint="Begin"
+                BackgroundColor="{DynamicResource Secondary}"
+                TextColor="{DynamicResource Primary}"
                 Clicked="Button_Clicked_1"
                 HorizontalOptions="Center" />
 

@@ -8271,6 +8271,9 @@ namespace _6002
 			// aapt resource value: 0x7F0700D3
 			public const int tooltip_frame_light = 2131165395;
 			
+			// aapt resource value: 0x7F0700D4
+			public const int yoshi = 2131165396;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();

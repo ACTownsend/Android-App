@@ -37,8 +37,8 @@ public partial class GameViewModel : ObservableObject
         };
        
         Keyboard1 = "QWERTYUIOP".ToCharArray();
-        Keyboard2 = "ASDFGHJKL".ToCharArray();
-        Keyboard3 = ">ZXCVBNM<".ToCharArray();
+        Keyboard2 = "ASDFGHJKL<".ToCharArray();
+        Keyboard3 = "ZXCVBNM>".ToCharArray();
         // Load the words from the text file
 
         var repo = new Repo();
@@ -52,7 +52,7 @@ public partial class GameViewModel : ObservableObject
     [RelayCommand]
     async void Back()
     {
-        await Shell.Current.GoToAsync("..");
+        await Shell.Current.GoToAsync("Game");
     }
     async public void Enter()
     {
@@ -70,7 +70,7 @@ public partial class GameViewModel : ObservableObject
         if (correct == 10)
         {
 
-            await App.Current.MainPage.DisplayAlert("Correct!", "You win", "Back To Main Menu");
+            await App.Current.MainPage.DisplayAlert("Correct!", "You win", "Play Again");
             Back();
         }
         else if(correct == 5)

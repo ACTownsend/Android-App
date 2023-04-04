@@ -524,3 +524,5 @@ C:\Users\Adam\source\repos\6002CEM assignment 2\6002\obj\Debug\net7.0-maccatalys
 C:\Users\Adam\source\repos\6002CEM assignment 2\6002\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\6002.pdb
 C:\Users\Adam\source\repos\6002CEM assignment 2\6002\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\6002.genruntimeconfig.cache
 C:\Users\Adam\source\repos\6002CEM assignment 2\6002\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\ref\6002.dll
+C:\Users\Adam\source\repos\6002CEM assignment 2\6002\bin\Debug\net7.0-maccatalyst\maccatalyst-x64\Resources\Raw\AboutAssets.txt
+C:\Users\Adam\source\repos\6002CEM assignment 2\6002\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\yoshi.png

@@ -34,6 +34,15 @@
     <AppxPackagedFile Include="C:\Users\Adam\source\repos\6002CEM assignment 2\6002\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\6002.dll">
       <PackagePath>6002.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adam\source\repos\6002CEM assignment 2\6002\Resources\Raw\AboutAssets.txt">
+      <PackagePath>AboutAssets.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adam\source\repos\6002CEM assignment 2\6002\Resources\Raw\words.txt">
+      <PackagePath>words.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adam\source\repos\6002CEM assignment 2\6002\Resources\Raw\AboutAssets.txt">
+      <PackagePath>Resources\Raw\AboutAssets.txt</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Adam\source\repos\6002CEM assignment 2\6002\Resources\Raw\words.txt">
       <PackagePath>Resources\Raw\words.txt</PackagePath>
     </AppxPackagedFile>
@@ -724,15 +733,6 @@
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Core.Ref.win\7.0.59\ref\net7.0-windows10.0.19041\Microsoft.Maui.pri">
       <PackagePath>Microsoft.Maui.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adam\source\repos\6002CEM assignment 2\6002\Resources\Raw\AboutAssets.txt">
-      <PackagePath>AboutAssets.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adam\source\repos\6002CEM assignment 2\6002\Resources\Raw\words.txt">
-      <PackagePath>words.txt</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Adam\source\repos\6002CEM assignment 2\6002\Resources\Raw\AboutAssets.txt">
-      <PackagePath>Resources\Raw\AboutAssets.txt</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Adam\source\repos\6002CEM assignment 2\6002\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
     </AppxPackagedFile>
@@ -906,6 +906,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Adam\source\repos\6002CEM assignment 2\6002\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adam\source\repos\6002CEM assignment 2\6002\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\ez31hfp4kji21.scale-100.png">
+      <PackagePath>ez31hfp4kji21.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adam\source\repos\6002CEM assignment 2\6002\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\yoshi.scale-100.png">
+      <PackagePath>yoshi.scale-100.png</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

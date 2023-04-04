@@ -10,28 +10,29 @@
             VerticalOptions="Center">
 
             <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                Source="yoshi.png"
+                SemanticProperties.Description="beeeeeeeeeg yoshi"
                 HeightRequest="200"
                 HorizontalOptions="Center" />
 
             <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
-
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
+                Text="Wordle game*"
                 SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                SemanticProperties.Description="Wordle game*"
                 FontSize="18"
                 HorizontalOptions="Center" />
 
             <Button
-                Text="Start App"
-                SemanticProperties.Hint="Start the game"
+                Text="Begin"
+                SemanticProperties.Hint="Begin"
                 Clicked="Button_Clicked_1"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="*Not official Wordle."
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="For legal reasons"
+                FontSize="6"
                 HorizontalOptions="Center" />
 
         </VerticalStackLayout>

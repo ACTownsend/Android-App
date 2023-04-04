@@ -49,6 +49,10 @@
     <MauiAsset Include="Resources\Raw\*" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <None Remove="Resources\Images\yoshi.png" />
+	</ItemGroup>
+
 
 
 	<ItemGroup>
@@ -71,7 +75,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Game.xaml">
+	  <MauiXaml Update="Views\Game.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

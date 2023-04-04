@@ -12,6 +12,7 @@ public partial class Game : ContentPage
         InitializeComponent();
         BindingContext = viewModel;
         var frame = new Frame();
+
     }
 
 

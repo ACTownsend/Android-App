@@ -654,3 +654,8 @@ C:\Users\Adam\source\repos\6002CEM assignment 2\6002\obj\Debug\net7.0-windows10.
 C:\Users\Adam\source\repos\6002CEM assignment 2\6002\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\Adam\source\repos\6002CEM assignment 2\6002\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Adam\source\repos\6002CEM assignment 2\6002\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+C:\Users\Adam\source\repos\6002CEM assignment 2\6002\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AboutAssets.txt
+C:\Users\Adam\source\repos\6002CEM assignment 2\6002\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\words.txt
+C:\Users\Adam\source\repos\6002CEM assignment 2\6002\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Resources\Raw\AboutAssets.txt
+C:\Users\Adam\source\repos\6002CEM assignment 2\6002\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\ez31hfp4kji21.scale-100.png
+C:\Users\Adam\source\repos\6002CEM assignment 2\6002\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\yoshi.scale-100.png

@@ -1,5 +1,4 @@
 ﻿namespace _6002;
-
 public partial class MainPage : ContentPage
 {
 
@@ -9,6 +8,7 @@ public partial class MainPage : ContentPage
     }
     private async void Button_Clicked_1(object sender, EventArgs e)
     {
+
        await Shell.Current.GoToAsync("Game");
     }
 }

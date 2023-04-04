@@ -1,21 +1,21 @@
 ﻿using _6002.Model;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-
-
+using System.IO;
+using Microsoft.Maui.Controls;
 namespace _6002.ViewModel;
 
 public partial class GameViewModel : ObservableObject
 {
-     int rowIndex;
-     int columnIndex;
+    int rowIndex;
+    int columnIndex;
 
+    private string _currentWord;
+    public string CurrentWord
+    {
+        get { return _currentWord; }
+        set { SetProperty(ref _currentWord, value); }
+    }
 
     char[] correctAnswer;
     public char[] Keyboard1 { get; }
@@ -35,10 +35,17 @@ public partial class GameViewModel : ObservableObject
             new WordRow(),
             new WordRow()
         };
-        correctAnswer = "TESTS".ToCharArray();
+       
         Keyboard1 = "QWERTYUIOP".ToCharArray();
         Keyboard2 = "ASDFGHJKL".ToCharArray();
         Keyboard3 = ">ZXCVBNM<".ToCharArray();
+        // Load the words from the text file
+
+        var repo = new Repo();
+        String word = repo.RandomWord();
+        correctAnswer = word.ToCharArray();
+        App.Current.MainPage.DisplayAlert("1",word,"2");
+
     }
 
     [RelayCommand]
@@ -49,12 +56,16 @@ public partial class GameViewModel : ObservableObject
     async public void Enter()
     {
 
-        if(columnIndex != 5)
+        if (columnIndex != 5)
         {
             return;
         }
+        var repo = new Repo();
         var correct = rows[rowIndex].Validate(correctAnswer);
-        if(correct)
+       // bool isAWord = repo.isWord(word);
+        //App.Current.MainPage.DisplayAlert("1", word, "2");
+
+        if (correct)
         {
 
             await App.Current.MainPage.DisplayAlert("Correct!", "You win", "Back To Main Menu");
@@ -80,8 +91,8 @@ public partial class GameViewModel : ObservableObject
             return;
         }
         if (letter == '<')
-        {   
-            if(columnIndex == 0)
+        {
+            if (columnIndex == 0)
             {
                 return;
             }

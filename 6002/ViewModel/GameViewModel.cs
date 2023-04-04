@@ -44,8 +44,9 @@ public partial class GameViewModel : ObservableObject
         var repo = new Repo();
         String word = repo.RandomWord();
         correctAnswer = word.ToCharArray();
+        
         App.Current.MainPage.DisplayAlert("1",word,"2");
-
+       
     }
 
     [RelayCommand]
@@ -61,15 +62,30 @@ public partial class GameViewModel : ObservableObject
             return;
         }
         var repo = new Repo();
-        var correct = rows[rowIndex].Validate(correctAnswer);
-       // bool isAWord = repo.isWord(word);
+        string poop = string.Join("", rows[rowIndex].Letters.Select(w => w.Input));
+        bool isAWord = repo.isWord(poop);
+        var correct = rows[rowIndex].Validate(correctAnswer, isAWord);
         //App.Current.MainPage.DisplayAlert("1", word, "2");
 
-        if (correct)
+        if (correct == 10)
         {
 
             await App.Current.MainPage.DisplayAlert("Correct!", "You win", "Back To Main Menu");
             Back();
+        }
+        else if(correct == 5)
+        {
+            await App.Current.MainPage.DisplayAlert("Error!", "Please enter a real word", "Try Again");
+
+            for (int i = 0; i < 5; i++)
+            {
+                columnIndex--;
+                rows[rowIndex].Letters[columnIndex].Input = ' ';
+                rows[rowIndex].Letters[columnIndex].Color = Colors.Black;
+                
+            }
+            return;
+            
         }
         if (rowIndex == 5)
         {
@@ -107,4 +123,5 @@ public partial class GameViewModel : ObservableObject
         rows[rowIndex].Letters[columnIndex].Input = letter;
         columnIndex++;
     }
+
 }
